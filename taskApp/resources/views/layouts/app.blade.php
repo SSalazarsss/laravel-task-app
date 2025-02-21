@@ -12,7 +12,7 @@
         <!-- Navbar content -->
          <h1 class="text-xl font-bold p-2 text-center">My Task App</h1>
     </nav>
-    <main class="inset-100 rounded-md shadow-white border bg-gradient-to-br from-white via transparent to-blue p-4 m-2">
+    <main class="inset-100 text-black rounded-md shadow-white border bg-gradient-to-br from-white via transparent to-blue p-4 m-2">
         @yield('content')
     </main>
 </body>

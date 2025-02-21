@@ -8,63 +8,63 @@
         @method('PUT') {{-- Important for updating (PUT/PATCH) --}}
 
         <div>
-            <label for="task_name">Task Name:</label>
+            <label class="block" for="task_name">Task Name:</label>
             <input type="text" name="task_name" id="task_name"
-                value="{{ old('task_name', $task->task_name) }}">
+                value="{{ old('task_name', $task->task_name) }}" class="p-3 shadow-2xs w-300 rounded-md items-center">
             @error('task_name')
                 <div style="color: red;">{{ $message }}</div>
             @enderror
         </div>
 
         <div>
-            <label for="task_location">Location:</label>
+            <label class="block" for="task_location">Location:</label>
             <input type="text" name="task_location" id="task_location"
-                value="{{ old('task_location', $task->task_location) }}">
+                value="{{ old('task_location', $task->task_location) }}" class="p-3 shadow-2xs w-300 rounded-md items-center">
             @error('task_location')
                 <div style="color: red;">{{ $message }}</div>
             @enderror
         </div>
 
         <div>
-            <label for="time_complexity">Time Complexity:</label>
+            <label class="block" for="time_complexity">Time Complexity:</label>
             <input type="number" name="time_complexity" id="time_complexity"
-                value="{{ old('time_complexity', $task->time_complexity) }}" min="1" max="5">
+                value="{{ old('time_complexity', $task->time_complexity) }}" min="1" max="5" class="p-3 shadow-2xs w-300 rounded-md items-center">
             @error('time_complexity')
                 <div style="color: red;">{{ $message }}</div>
             @enderror
         </div>
 
         <div>
-            <label for="materials_required">Materials Required:</label>
+            <label class="block" for="materials_required">Materials Required:</label>
             <input type="text" name="materials_required" id="materials_required"
-                value="{{ old('materials_required', $task->materials_required) }}">
+                value="{{ old('materials_required', $task->materials_required) }}" class="p-3 shadow-2xs w-300 rounded-md">
             @error('materials_required')
                 <div style="color: red;">{{ $message }}</div>
             @enderror
         </div>
 
         <div>
-            <label for="deadline">Deadline:</label>
+            <label class="block"  for="deadline">Deadline:</label>
             <input type="date" name="deadline" id="deadline"
-                value="{{ old('deadline', $task->deadline) }}">
+                value="{{ old('deadline', $task->deadline) }}" class="p-3 shadow-2xs w-300 rounded-md">
             @error('deadline')
                 <div style="color: red;">{{ $message }}</div>
             @enderror
         </div>
 
         <div>
-            <label for="priority">Priority:</label>
+            <label class="block" for="priority">Priority:</label>
             <input type="number" name="priority" id="priority"
-                value="{{ old('priority', $task->priority) }}" min="1" max="3">
+                value="{{ old('priority', $task->priority) }}" min="1" max="3" class="p-3 shadow-2xs w-300 rounded-md">
             @error('priority')
                 <div style="color: red;">{{ $message }}</div>
             @enderror
         </div>
 
         <div>
-            <label for="category">Category:</label>
+            <label class="block" for="category">Category:</label>
             <input type="text" name="category" id="category"
-                value="{{ old('category', $task->category) }}">
+                value="{{ old('category', $task->category) }}" class="p-3 shadow-2xs w-300 rounded-md">
             @error('category')
                 <div style="color: red;">{{ $message }}</div>
             @enderror

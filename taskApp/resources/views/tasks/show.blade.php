@@ -33,8 +33,8 @@
         <strong>Category:</strong> {{ $task->category }}
     </div>
 
-    <div style="margin-top:20px">
+    <div style="margin-top:20px mb-2 text-white">
         <a href="{{ route('tasks.edit', $task->id) }}" class="btn btn-primary">Edit Task</a>
         <a href="{{ route('tasks.index') }}" class="btn btn-secondary">Back to List</a>
     </div>
-@endofsection
+@endsection
